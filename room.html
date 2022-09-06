@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Room</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/room.css" />
+
+</head>
+
+<body>
+    <header id="header nav">
+        <div class="navbar_bar">
+            <div id="header_nav">
+                <h1>Streamming</h1>
+                <ul>
+
+                    <li class="create_room">
+                        <a class="nav_link" id="create_room" href="join.html" target="_parent">Create Room</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--navbar-->
+
+
+    </header>
+    <main id="room_container">
+        <section class="container">
+            <section class="row_flex">
+
+                <section id="participants_container">
+                    <div id="participants_header">
+                        <p>Room Members</p>
+                        <strong id="member_count">0</strong>
+                    </div>
+                    <!--participants-header-->
+
+
+                </section>
+                <!--participants-container-->
+
+
+                <section id="video">
+
+                    <div class="icons" id="stream_controls">
+
+                        <button id="camera-btn">
+                               <img src="image/camera (1).png" alt="camera" />
+                            </button>
+                        <button id="mic-btn">
+                               <img src="image/microfone.png" alt="microphone" />
+                            </button>
+                        <button id="screen-btn">
+                               <img src="image/tela-do-computador-pessoal.png" alt="tela " />
+                            </button>
+
+                        <button id="stream-btn" style="background-color: crimson;">
+                             <p>
+                                Start 
+
+                            </p> 
+                            </button>
+
+
+                    </div>
+                    <div class="video_background">
+
+
+                    </div>
+
+                    <!--video_background-->
+
+                    <div id="video_call">
+
+
+
+
+
+                    </div>
+                    <!--video_call-->
+
+
+                </section>
+                <!--video-->
+                <div class="messageContainer">
+                    <section id="messages">
+                        <div class="message_wrapper">
+
+                        </div>
+                        <!--mesage_wrapper-->
+                    </section>
+                    <!--messages-->
+
+                    <div id="form_container">
+                        <form id="message_form">
+                            <input type="text" required name="message" placeholder="Escreva aqui..." />
+                        </form>
+                        <!--message_form-->
+
+                    </div>
+                    <!--form-container-->
+
+                </div>
+                <!--messageContainer-->
+
+            </section>
+            <!--row_grid-->
+
+
+
+        </section>
+        <!--container-->
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+</body>
+<script src="js/agora-rtm-sdk-1.5.1.js">
+</script>
+<script src="js/AgoraRTC_N-4.14.0.js">
+</script>
+<script type="module" src="js/room.js">
+</script>
+
+</html>

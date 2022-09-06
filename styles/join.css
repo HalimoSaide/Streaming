@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600;700;800&display=swap");
+#join_container {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.join_section {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #6666;
+    background-image: url("../image/Film\ rolls-rafiki.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+#form_container_1 {
+    padding: 20px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    background-color: #312b2b;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    opacity: 0.97;
+    border-radius: 2px;
+}
+
+#form_container_header {
+    background: hsla(300, 100%, 25%, 0.536);
+    width: 100%;
+    padding: 20px 20px;
+    transform: translateY(-20px);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+#form_container_1 h1 {
+    text-align: center;
+    font-size: clamp(15px, 1.4vw, 20px);
+}
+
+.form_field_wrapper {
+    padding: 20px 20px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.form_field_wrapper input {
+    margin-top: 10px;
+    width: 95%;
+    height: 40px;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+}
+
+.form_field_wrapper input[type=submit] {
+    background-color: rgb(81, 12, 81);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 600px;
+    font-size: clamp(1.2em, 1.6vw, 1.5em);
+    transition: 0.1s;
+    transition-timing-function: ease-in-0ut;
+}
+
+.form_field_wrapper input[type=submit]:hover {
+    scale: 1.05;
+    background-color: rgb(195, 66, 195);
+}
+
+.form_field_wrapper input[type=text] {
+    background-color: #1a1a1a;
+    border: 0;
+    border-radius: 2px;
+}
+
+.form_field_wrapper label {
+    display: block;
+}
+
+#lobby_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

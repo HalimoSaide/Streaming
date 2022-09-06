@@ -1,0 +1,194 @@
+  #participants_container {
+      border-right: #797a79;
+      height: 100vh;
+      position: relative;
+      bottom: 0;
+  }
+  
+  .container {
+      max-width: 1440px;
+      height: 100%;
+      margin: 0 auto;
+  }
+  
+  #room_container {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      height: calc(100% - 100px);
+  }
+  
+  #room_container .row_flex {
+      height: 100%;
+      width: 100%;
+      position: sticky;
+      display: flex;
+      justify-content: space-between;
+      gap: 7px;
+  }
+  
+  .row_flex #participants_container {
+      background-color: #151515;
+      width: 15%;
+  }
+  
+  #participants_header {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      background-color: hsla(300, 100%, 25%, 0.536);
+      width: 100%;
+  }
+  
+  #participants_header #member_count {
+      background-color: hsl(16, 100%, 50%);
+      border-radius: 20px;
+      width: 20px;
+      height: 20px;
+  }
+  
+  #video {
+      width: 65%;
+      position: relative;
+  }
+  
+  .messageContainer {
+      width: 30%;
+      background-color: #151515;
+      background-blend-mode: multiply;
+      height: 100vh;
+      overflow: auto;
+      position: relative;
+  }
+  
+   ::-webkit-scrollbar {
+      background-color: #1a1a1a;
+      width: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+      background-color: hsla(300, 100%, 25%, 0.536);
+  }
+  
+  body::-webkit-scrollbar-track {
+      background-color: orange;
+  }
+  
+  #messages {
+      margin-bottom: 100px;
+  }
+  
+  .message_wrapper {
+      background-color: #363739;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 10px;
+  }
+  
+  #form_container {
+      overflow: auto;
+      position: sticky;
+      width: 100%;
+      position: relative;
+  }
+  
+  #message_form {
+      width: 100%;
+  }
+  
+  #form_container #message_form input {
+      background-color: #3f434a;
+      padding: 20px;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      outline: 0;
+      width: 100%;
+      max-width: 390px;
+  }
+  
+  .video_background {
+      background-image: url("/image/Film rolls-amico.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #fff;
+      height: 400px;
+      width: 100%;
+      position: absolute;
+      object-fit: cover;
+      z-index: -1;
+  }
+  
+  .video-container {
+      height: 400px;
+      position: relative;
+      object-fit: cover;
+      z-index: -1;
+  }
+  
+  .video-player {
+      height: 400px;
+      z-index: -1;
+      position: relative;
+  }
+  
+  .icons {
+      z-index: 1;
+      position: absolute;
+      top: calc( 50% + 70px);
+      left: 50%;
+      transform: translate(-50%);
+      width: 200px;
+      height: 50px;
+      background-color: hsla(300, 100%, 25%, 0.236);
+      border-radius: 2px;
+  }
+  
+  .icons img {
+      width: 20px;
+      height: 20px;
+  }
+  
+  .icons button {
+      z-index: 1;
+      background-color: #3f434a;
+      border: 0;
+      width: 30px;
+      cursor: pointer;
+      border-radius: 2px;
+      height: 30px;
+      position: relative;
+      margin: 0 auto;
+      top: 10%;
+  }
+  
+  #stream-btn {
+      width: 60px;
+      height: 40px;
+      margin-left: 15px;
+  }
+  
+  #stream_controls {
+      display: none;
+  }
+  
+  .icons button:hover {
+      background-color: hsla(300, 100%, 25%, 0.236);
+  }
+  
+  .icons button.active {
+      background-color: hsla(300, 100%, 25%, 0.536);
+  }
+  
+  .member_wrapper {
+      display: flex;
+      align-items: center;
+  }
+  
+  .green_dot {
+      background-color: green;
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      margin: 10px;
+  }

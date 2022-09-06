@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Room</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/join.css" />
+
+</head>
+
+<body>
+    <header id="header nav">
+        <div class="navbar_bar">
+            <div id="header_nav">
+                <h1>Streamming</h1>
+                <ul>
+
+                    <li class="create_room">
+                        <a class="nav_link" id="create_room" href="join.html" target="_parent">Create Room</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--navbar-->
+
+
+    </header>
+    <main id="join_container">
+        <div class="join_section">
+            <div class="container">
+                <div id="form_container_1">
+                    <div id="form_container_header">
+                        <h1>Join Room</h1>
+
+                    </div>
+                    <!--form_container_header-->
+                    <form id="lobby_form">
+                        <div class="form_field_wrapper">
+                            <label>Your Name</label>
+                            <input type="text" name="name" required placeholder="Enter your name..." />
+                        </div>
+                        <!--form_field_wrapper-->
+                        <div class="form_field_wrapper">
+                            <label>Room Name</label>
+                            <input type="text" name="room" required placeholder="Enter your name..." />
+                        </div>
+                        <!--form_field_wrapper-->
+                        <div class="form_field_wrapper">
+
+                            <input type="submit" value="Join" />
+                        </div>
+                        <!--form_field_wrapper-->
+
+                    </form>
+                    <!--lobby_form-->
+                </div>
+                <!--form_container-->
+            </div>
+            <!--container-->
+
+        </div>
+        <!--join-section-->
+
+    </main>
+
+</body>
+<script src="js/agora-rtm-sdk-1.5.1.js">
+</script>
+<script src="js/AgoraRTC_N-4.14.0.js">
+</script>
+<script type="module" src="js/join.js">
+</script>
+
+</html>
